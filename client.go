@@ -11,11 +11,25 @@ type Client struct {
 	subscriptionKey string
 }
 
-func NewClient(baseUrl, subscriptionKey string) *Client {
+type ClientOption func(*Client)
+
+func WithHTTPClient(hc *http.Client) ClientOption {
+	return func(c *Client) {
+		c.httpClient = hc
+	}
+}
+
+func WithTimeout(timeout time.Duration) ClientOption {
+	return func(c *Client) {
+		c.httpClient.Timeout = timeout
+	}
+}
+
+func NewClient(baseUrl, subscriptionKey string, opts ...ClientOption) *Client {
 	return &Client{
 		baseUrl: baseUrl,
 		httpClient: &http.Client{
-			Timeout: 10 * time.Second,
+			Timeout: 15 * time.Second,
 		},
 		subscriptionKey: subscriptionKey,
 	}

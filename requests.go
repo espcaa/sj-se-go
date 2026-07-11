@@ -12,6 +12,8 @@ import (
 func (c Client) DoRequest(ctx context.Context, method, path string, body any, response any) error {
 	url := fmt.Sprintf("%s%s", c.baseUrl, path)
 
+	fmt.Println("Request URL:", url)
+
 	var buf bytes.Buffer
 	if body != nil {
 		if err := json.NewEncoder(&buf).Encode(body); err != nil {
