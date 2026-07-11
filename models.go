@@ -264,23 +264,23 @@ type PointPriceDetail struct {
 }
 
 type SeatOffers struct {
-	Offers                           SeatCategories `json:"offers"`
-	PriceFrom                        *PriceDetail   `json:"priceFrom"`
-	PointPriceFrom                   *string        `json:"pointPriceFrom"`
-	Available                        bool           `json:"available"`
-	HasChangedDepartureForFree       bool           `json:"hasChangedDepartureForFree"`
-	HasContractPrice                 bool           `json:"hasContractPrice"`
-	HasPromotionPrice                bool           `json:"hasPromotionPrice"`
-	HasPromotionNonDiscount          bool           `json:"hasPromotionNonDiscount"`
-	HasCampaignPrice                 bool           `json:"hasCampaignPrice"`
-	HasPossiblePromotionPriceOnAddon bool           `json:"hasPossiblePromotionPriceOnAddon"`
-	HasFamilyDiscountPrice           bool           `json:"hasFamilyDiscountPrice"`
-	HasInterRailPrice                bool           `json:"hasInterRailPrice"`
-	HasLastMinutePrice               bool           `json:"hasLastMinutePrice"`
-	HasDisruptionRebookPrice         bool           `json:"hasDisruptionRebookPrice"`
-	HasPersonalAssistantPrice        bool           `json:"hasPersonalAssistantPrice"`
-	HasAccompanyingPersonPrice       bool           `json:"hasAccompanyingPersonPrice"`
-	HasServiceDogPrice               bool           `json:"hasServiceDogPrice"`
+	Offers                           SeatCategories    `json:"offers"`
+	PriceFrom                        *PriceDetail      `json:"priceFrom"`
+	PointPriceFrom                   *PointPriceDetail `json:"pointPriceFrom"`
+	Available                        bool              `json:"available"`
+	HasChangedDepartureForFree       bool              `json:"hasChangedDepartureForFree"`
+	HasContractPrice                 bool              `json:"hasContractPrice"`
+	HasPromotionPrice                bool              `json:"hasPromotionPrice"`
+	HasPromotionNonDiscount          bool              `json:"hasPromotionNonDiscount"`
+	HasCampaignPrice                 bool              `json:"hasCampaignPrice"`
+	HasPossiblePromotionPriceOnAddon bool              `json:"hasPossiblePromotionPriceOnAddon"`
+	HasFamilyDiscountPrice           bool              `json:"hasFamilyDiscountPrice"`
+	HasInterRailPrice                bool              `json:"hasInterRailPrice"`
+	HasLastMinutePrice               bool              `json:"hasLastMinutePrice"`
+	HasDisruptionRebookPrice         bool              `json:"hasDisruptionRebookPrice"`
+	HasPersonalAssistantPrice        bool              `json:"hasPersonalAssistantPrice"`
+	HasAccompanyingPersonPrice       bool              `json:"hasAccompanyingPersonPrice"`
+	HasServiceDogPrice               bool              `json:"hasServiceDogPrice"`
 }
 
 type SeatCategories struct {
