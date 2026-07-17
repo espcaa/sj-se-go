@@ -42,11 +42,7 @@ func main() {
 			Age:  &age,
 		},
 		// you need a valid interail code to use this, but that's how you apply discounts!
-		//DiscountCards: []*sj.DiscountCard{
-		//	{
-		//		Code:       "UIC_INTERRAIL",
-		//		Identifier: "ABCD12",
-		//	},
+		//
 		//},
 	}
 

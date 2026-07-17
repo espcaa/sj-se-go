@@ -105,7 +105,7 @@ type Leg struct {
 	ServiceBrandName           struct {
 		Code        string `json:"code"`
 		Description string `json:"description"`
-	} `json:"serviceBrandName,omitempty"`
+	} `json:"serviceBrandName"`
 	ServiceBrandNameDescription *string           `json:"serviceBrandNameDescription,omitempty"`
 	ServiceProperties           []ServiceProperty `json:"serviceProperties"`
 	// travelInformationMessages is [] so idk
