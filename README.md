@@ -2,7 +2,8 @@
 
 a simple go library to interact with sj.se's undocumented web booking api. \
 so far, only search & offers (getting price of a search result) are implemented. \
-this might be particularly useful to build a price/availability tracker :)
+this might be particularly useful to build a price/availability tracker :) \
+ai usage is limited to inline hints (copilot)
 
 ## installation
 
